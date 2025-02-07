@@ -44,6 +44,40 @@ A forma como você lida com a experiência do usuário também é um ponto de av
 
 ![Modal Editar Resultado-Chave](./assets/modal-edit-key-result.jpg)
 
+## API
+
+Para salvar as informações geradas pela interface do teste será necessário integra-se com uma API Rest. 
+
+Você pode usar qualquer API, desde que nos envie as credenciais necessárias para acessá-la e rodar o projeto com sucesso.
+
+Todavia, separamos um serviço público que poderá te ajudar a criar uma API Rest gratuitamente e servirá bem ao propósito deste teste.
+
+O serviço é o [MockAPI.io](https://mockapi.io/), e é possível utilizá-lo em uma das 3 (três) formas a seguir:
+
+### 1. Clonar API de OKRs no MockAPI.io (recomendado)
+
+Ao acessar o link https://mockapi.io/clone/67a67e77510789ef0dfb8c45, é possível fazer uma cópia da estrutura da API Rest criada por nós e começar a desenvolver com base nela.
+
+### 2. Criar a Própria API Rest
+
+No [MockAPI.io](https://mockapi.io/), é possível criar sua própria API Rest, modelando os recursos para sua aplicação. 
+
+Só muita atenção ao limite de recursos na conta gratuita que é de 2 (dois) recursos e 1 (um) projeto.
+
+![image](https://github.com/user-attachments/assets/55ea04ec-c461-411f-a26b-5c71bc7696d7)
+
+### 3. Utilizar a API Rest Criada por Nós
+
+Nós criamos o modelo para ser clonado e ele está público, então pode ser utilizado caso desejem. 
+
+O único ponto de atenção é que os recursos estarão sendo compartilhados e pode haver edição/exclusão de cadastro entre os participantes do teste.
+
+Os endpoints base são:
+
+https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs
+
+https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs/1/resultKeys
+
 ## Como você deve entregar seu teste
 
 Nos envie um e-mail para frontend@tootz.com.br contendo:
