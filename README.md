@@ -52,9 +52,9 @@ Você pode usar qualquer API, desde que nos envie as credenciais necessárias pa
 
 Todavia, separamos um serviço público que poderá te ajudar a criar uma API Rest gratuitamente e servirá bem ao propósito deste teste.
 
-O serviço é o [MockAPI.io](https://mockapi.io/) e é possível entender sobre o seu funcionamento acessando o [Docs](https://github.com/mockapi-io/docs/wiki).
+O serviço é o [MockAPI.io](https://mockapi.io/) e é possível entender sobre o seu funcionamento acessando sua [Wiki](https://github.com/mockapi-io/docs/wiki).
 
-Após a leitura da documentação, utilize o [Gist](https://gist.github.com/wendellpbarreto/ac1620f0345fb07a34b6731eecccc96d) como referência de organização de dados e escolha uma das 3 (três) formas abaixo para seguir:
+Após a leitura, utilize o [Gist](https://gist.github.com/wendellpbarreto/ac1620f0345fb07a34b6731eecccc96d) como referência de organização de dados e escolha uma das 3 (três) formas abaixo para seguir:
 
 ### 1. Clonar API de OKRs no MockAPI.io (recomendado)
 
