@@ -54,7 +54,7 @@ Todavia, separamos um serviço público que poderá te ajudar a criar uma API Re
 
 O serviço é o [MockAPI.io](https://mockapi.io/) e é possível entender sobre o seu funcionamento acessando o [Docs](https://github.com/mockapi-io/docs/wiki).
 
-Após a leitura da documentação, escolha uma das 3 (três) formas abaixo para seguir:
+Após a leitura da documentação, utilize o [Gist](https://gist.github.com/wendellpbarreto/ac1620f0345fb07a34b6731eecccc96d) como referência de organização de dados e escolha uma das 3 (três) formas abaixo para seguir:
 
 ### 1. Clonar API de OKRs no MockAPI.io (recomendado)
 
@@ -76,9 +76,11 @@ O único ponto de atenção é que os recursos estarão sendo compartilhados e p
 
 Os endpoints base são:
 
-https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs
+```http
+  https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs
 
-https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs/1/resultKeys
+  https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs/${id}/resultKeys
+```
 
 ## Como você deve entregar seu teste
 
