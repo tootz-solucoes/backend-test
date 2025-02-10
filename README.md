@@ -4,7 +4,7 @@ _Dá uma lida com calma em cada parágrafo, **todos** são importantes._
 
 Este é um teste técnico para a vaga de Pessoa Desenvolvedora Frontend. Você deve ter recebido esse link após ter sido aprovado nas etapas iniciais do nosso processo seletivo. Se chegou aqui por acaso, sinta-se à vontade para realizar o teste e nos enviar o resultado, ficamos feliz com o seu interesse em fazer parte do nosso time.
 
-A [**TTZ.**](https://ttz.dev.br) é uma fábrica de software especializada no desenvolvimento e manutenção de produtos digitais de várias áreas. Nos tornamos a equipe de tecnologia dos projetos dos nossos clientes, e sendo assim, nosso dia a dia envolve a resolução de problemas e implementação de novas funcionalidades trazidas por eles. Além disso, nossa equipe de desenvolvimento também é responsável por manter dois produtos "da casa".
+A [**TTZ.**](https://ttz.dev.br) é uma fábrica de software especializada no desenvolvimento e manutenção de produtos digitais de várias áreas. Nos tornamos a equipe de tecnologia dos projetos dos nossos clientes. Sendo assim, nosso dia a dia envolve a resolução de problemas e implementação de novas funcionalidades trazidas por eles. Além disso, nossa equipe de desenvolvimento também é responsável por manter dois produtos "da casa".
 
 ## O problema que você precisa resolver
 
@@ -85,9 +85,9 @@ https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs/${id}/resultKeys
 
 Nos envie um e-mail para frontend@tootz.com.br contendo:
 
-- Seu nome
-- URL do repositório público
-- Obrservações e comentários que julgar relevante sobre o seu código
+- Seu nome;
+- URL do repositório público;
+- Observações e comentários que julgar relevante sobre o seu código;
 
 > **"Mas eu estou trabalhando atualmente e não posso publicar esse repositório no meu perfil público"**
 
