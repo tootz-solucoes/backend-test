@@ -73,7 +73,7 @@ Sua tarefa é **processar esses dados e construir uma API** que permita consulta
 ---
 
 📄 **Arquivo de entrada:**
-![file](./assets/game_log_large.png)
+[Log](./assets/game_log_large.txt)
 
 ---
 
