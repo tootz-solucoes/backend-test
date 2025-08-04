@@ -91,8 +91,6 @@ A forma como você escreve e organiza os seus _commits_ também é avaliada no t
 
 ## O que esperamos do seu teste
 
-Entendemos que você pode ter experiência com outros _frameworks_ e linguagens, inclusive valorizamos isso. Mas neste teste esperamos que você desenvolva uma aplicação Ruby on Rails que é a base da nossa _stack_.
-
 A forma como você organiza seus arquivos, estrutura seus métodos, nomeia variáveis e gerencia seu código como um todo também será avaliada. Portanto, seja cuidadoso e adote boas práticas e padrões.
 
 Precisamos saber como rodar seu projeto, por isso, garanta que o conteúdo do README seja suficiente para nos guiar neste momento.
