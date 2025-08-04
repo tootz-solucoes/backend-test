@@ -1,8 +1,8 @@
-# Teste Técnico para Pessoa Desenvolvedora Frontend na [TTZ.](https://ttz.dev.br)
+# Teste Técnico para Desenvolvedor Backend na [TTZ.](https://ttz.dev.br)
 
 _Dá uma lida com calma em cada parágrafo, **todos** são importantes._
 
-Este é um teste técnico para a vaga de Pessoa Desenvolvedora Frontend. Você deve ter recebido esse link após ter sido aprovado nas etapas iniciais do nosso processo seletivo. Se chegou aqui por acaso, sinta-se à vontade para realizar o teste e nos enviar o resultado, ficamos feliz com o seu interesse em fazer parte do nosso time.
+Este é um teste técnico para a vaga de Desenvolvedor Backend. Você deve ter recebido esse link após ter sido aprovado nas etapas iniciais do nosso processo seletivo. Se chegou aqui por acaso, sinta-se à vontade para realizar o teste e nos enviar o resultado, ficamos feliz com o seu interesse em fazer parte do nosso time.
 
 A [**TTZ.**](https://ttz.dev.br) é uma fábrica de software especializada no desenvolvimento e manutenção de produtos digitais de várias áreas. Nos tornamos a equipe de tecnologia dos projetos dos nossos clientes. Sendo assim, nosso dia a dia envolve a resolução de problemas e implementação de novas funcionalidades trazidas por eles. Além disso, nossa equipe de desenvolvimento também é responsável por manter dois produtos "da casa".
 
