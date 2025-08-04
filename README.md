@@ -91,7 +91,7 @@ A forma como você escreve e organiza os seus _commits_ também é avaliada no t
 
 ## O que esperamos do seu teste
 
-A forma como você organiza seus arquivos, estrutura seus métodos, nomeia variáveis e gerencia seu código como um todo também será avaliada. Portanto, seja cuidadoso e adote boas práticas e padrões.
+Pode desenvolver a solução na linguagem e framework de sua preferência. A forma como você organiza seus arquivos, estrutura seus métodos, nomeia variáveis e gerencia seu código como um todo também será avaliada. Portanto, seja cuidadoso e adote boas práticas e padrões.
 
 Precisamos saber como rodar seu projeto, por isso, garanta que o conteúdo do README seja suficiente para nos guiar neste momento.
 
