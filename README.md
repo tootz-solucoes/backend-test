@@ -8,82 +8,78 @@ A [**TTZ.**](https://ttz.dev.br) é uma fábrica de software especializada no de
 
 ## O problema que você precisa resolver
 
-Um de nossos clientes, a América Senior, nos pediu para desenvolver um painel onde eles pudessem gerenciar os **OKRs** do seu negócio.
+Você recebeu um **log bruto** gerado por um servidor do jogo *BattleQuest*.
+Esse log contém **centenas de milhares de eventos** representando interações entre jogadores, combate, coleta de itens, progressão em quests e mensagens do sistema.
 
-**OKRs** (_Objectives and Key Results_) são uma metodologia de definição de metas usada por empresas para alinhar esforços e medir resultados.
+Sua tarefa é **processar esses dados e construir uma API** que permita consultas e dashboards sobre o que aconteceu no jogo.
 
-- **Objetivos**: Definem uma meta clara e inspiradora que se deseja alcançar. Devem ser desafiadores e qualitativos.
-- **Resultados-chave**: São métricas que indicam se o objetivo está sendo atingido. Devem ser específicos, mensuráveis e baseados em evidências.
-- **Entregas/Iniciativas**: São as ações concretas que realizamos para influenciar os resultados-chave.
+---
 
-Essa abordagem ajuda a manter equipes focadas, garantindo transparência e acompanhamento contínuo do progresso.
+### **Objetivo**
 
-Nesse painel o usuário deve ver os Objetivos cadastrados para o seu negócio, assim como poder cadastrar um novo Objetivo com nome. Para cada Objetivo cadastrado o usuário deve poder cadastrar Resultados-chave com nome e Entregas (cada uma delas deve ter nome e percentual de conclusão).
+* Criar um **serviço backend** que:
 
-Com essa descrição nosso novo designer de interfaces construiu alguns prototipos desse painel que podem servir como base para você. Mas fique à vontade para construir uma interface diferente se achar que deve.
+  1. **Carregue e armazene** os eventos do log em um banco de dados.
+  2. Disponibilize **endpoints REST** para consultas e estatísticas.
+  3. Permita **filtros e agregações** úteis para análise.
 
-A forma como você lida com a experiência do usuário também é um ponto de avaliação neste teste. Sinta-se à vontade para utilizar um _framework_ como [TailwindCSS](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/) ou outro. Reinventar a roda não é o caminho.
+---
 
-### Painel
+### **Tarefas obrigatórias**
 
-![Painel](./assets/painel.jpg)
+1. **Processamento e persistência**
 
-### Card Objetivo
+   * Ler o arquivo de log e extrair campos relevantes.
+   * Normalizar dados (datas, números, strings).
+   * Armazenar em banco relacional ou NoSQL.
 
-![Card Objetivo](./assets/card-objective.jpg)
+2. **API mínima**
 
-### Modal Adicionar Objetivo
+   * `GET /players` → lista de jogadores com dados básicos.
+   * `GET /players/:id/stats` → estatísticas de um jogador (pontuação, mortes, itens coletados, quests concluídas).
+   * `GET /leaderboard` → ranking de jogadores por pontuação.
+   * `GET /events?limit=50` → últimos eventos.
+   * `GET /items/top` → itens mais coletados.
 
-![Modal Adicionar Objetivo](./assets/modal-add-objective.jpg)
+---
 
-### Modal Adicionar Resultado-Chave
+### **Desafio extra (opcional)**
 
-![Modal Adicionar Resultado-Chave](./assets/modal-add-key-result.jpg)
+* Endpoint `/dashboard` com:
 
-### Modal Editar Resultado-Chave
+  * Total de jogadores ativos no intervalo.
+  * Pontuação total acumulada.
+  * Itens mais coletados.
+  * Jogadores com mais mortes.
+  * Chefes derrotados.
+* Atualização contínua: permitir adicionar novos logs sem duplicar dados.
+* Autenticação simples (token via header).
+* Documentação (Swagger ou README).
+* Testes automatizados
 
-![Modal Editar Resultado-Chave](./assets/modal-edit-key-result.jpg)
+---
 
-## Como você vai salvar e consumir dados
+### **Critérios de avaliação**
 
-Para salvar as informações geradas pela interface que vai você vai implementar será necessário integrá-la com uma API Rest.
+| Critério                                         | Peso |
+| ------------------------------------------------ | ---- |
+| Modelagem de dados clara e escalável             | 20%  |
+| Qualidade do código (organização, boas práticas) | 20%  |
+| Corretude funcional (respostas corretas)         | 20%  |
+| Eficiência no processamento e consultas          | 15%  |
+| API bem projetada e documentada                  | 15%  |
+| Extras / Criatividade                            | 10%  |
 
-Você pode usar qualquer API, desde que nos envie as credenciais necessárias para acessá-la e rodar o projeto com sucesso.
+---
 
-Todavia, separamos um serviço público que poderá te ajudar a criar uma API Rest gratuitamente e servirá bem ao propósito deste teste.
+📄 **Arquivo de entrada:**
+![file](./assets/game_log_large.png)
 
-O serviço é o [MockAPI.io](https://mockapi.io/) e é possível entender sobre o seu funcionamento acessando sua [Wiki](https://github.com/mockapi-io/docs/wiki).
-
-Após a leitura, utilize o [Gist](https://gist.github.com/wendellpbarreto/ac1620f0345fb07a34b6731eecccc96d) como referência de organização de dados e escolha uma das 3 (três) formas abaixo para seguir:
-
-### 1. Clonar API de OKRs no MockAPI.io (recomendado)
-
-Ao acessar o link https://mockapi.io/clone/67a67e77510789ef0dfb8c45, é possível fazer uma cópia da estrutura da API Rest criada por nós e começar a desenvolver com base nela.
-
-### 2. Criar a Própria API Rest
-
-No [MockAPI.io](https://mockapi.io/), é possível criar sua própria API Rest, modelando os recursos para sua aplicação.
-
-Só tenha muita atenção ao limite de recursos na conta gratuita que é de 2 (dois) recursos e 1 (um) projeto.
-
-![image](./assets/api-mock.png)
-
-### 3. Utilizar a API Rest Criada por Nós
-
-Nós criamos o modelo para ser clonado e ele está público, então pode ser utilizado caso desejem.
-
-O único ponto de atenção é que os recursos estarão sendo compartilhados e pode haver edição/exclusão de cadastro entre os participantes do teste.
-
-Os endpoints base são:
-
-```
-https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs
-https://67a67e77510789ef0dfb8c44.mockapi.io/api/okrs/${id}/resultKeys
-```
+---
 
 ## Como você deve entregar seu teste
 
-Nos envie um e-mail para frontend@tootz.com.br contendo:
+Nos envie um e-mail para backend@tootz.com.br contendo:
 
 - Seu nome;
 - URL do repositório público;
@@ -91,19 +87,13 @@ Nos envie um e-mail para frontend@tootz.com.br contendo:
 
 > **"Mas eu estou trabalhando atualmente e não posso publicar esse repositório no meu perfil público"**
 
-A forma como você escreve e organiza os seus _commits_ também é avaliada no teste, mas se realmente é um impedimento para você nos envie o seu código fonte compactado sem a pasta _node_modules_.
+A forma como você escreve e organiza os seus _commits_ também é avaliada no teste, mas se realmente é um impedimento para você nos envie o seu código fonte compactado.
 
 ## O que esperamos do seu teste
 
-Entendemos que você pode ter experiência com outros _frameworks_ e linguagens, inclusive valorizamos isso. Mas neste teste esperamos que você desenvolva uma aplicação web Javascript utilizando [React](https://react.dev/) e [Next.js](https://nextjs.org/) que são as bases da nossa _stack_.
-
-Dizer que sabe o que é um _state_ ou um _hook_ é fácil, basta ler na documentação. O que vamos avaliar aqui é como você utiliza essas e outras ferramentas desses _frameworks_ para resolver o problema que o cliente pediu.
-
-Sua aplicação **precisa** ser responsiva! É 2025 e não há mais espaço para aplicações web que não funcionam bem em dispositivos móveis.
+Entendemos que você pode ter experiência com outros _frameworks_ e linguagens, inclusive valorizamos isso. Mas neste teste esperamos que você desenvolva uma aplicação Ruby on Rails que é a base da nossa _stack_.
 
 A forma como você organiza seus arquivos, estrutura seus métodos, nomeia variáveis e gerencia seu código como um todo também será avaliada. Portanto, seja cuidadoso e adote boas práticas e padrões.
-
-Siga as boas práticas do React e do Next.js, além de manter a qualidade do código seguindo as boas práticas do JavaScript. O uso de um linter pode ajudar nesse processo.
 
 Precisamos saber como rodar seu projeto, por isso, garanta que o conteúdo do README seja suficiente para nos guiar neste momento.
 
@@ -113,12 +103,8 @@ Precisamos saber como rodar seu projeto, por isso, garanta que o conteúdo do RE
 
 Se encontrarmos testes unitários e/ou de aceitação com certeza você vai ganhar uns pontinhos a mais na seleção.
 
-Além da url do repositório, entregar também a url da aplicação em algum serviço como [Vercel](https://vercel.com), [Netlify](https://www.netlify.com/) ou outro seria algo bem legal de ver.
-
-Os usuários adoram páginas com animações, a gente também. Mas tenha cuidado, se isso comprometer a performance da sua aplicação pode se tornar um ponto negativo.
-
 ---
 
 Vamos revisar seu código, testar e avaliar o resultado. Aproveite o tempo indicado para fazer o teste e mostre suas habilidades!
 
-Se tiver alguma dúvida não se acanhe e envie um e-mail para frontend@tootz.com.br.
+Se tiver alguma dúvida não se acanhe e envie um e-mail para backend@tootz.com.br.
